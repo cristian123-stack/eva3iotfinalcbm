@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:padding="16dp"
+    tools:context=".OpcionesCuenta">
+
+    <TextView
+        android:id="@+id/tituloOpciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="@string/opciones_de_cuenta"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnActualizarUsuario"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/azul"
+        android:text="@string/actualizar_usuarioop"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tituloOpciones" />
+
+    <Button
+        android:id="@+id/btnActualizarPassword"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/azul"
+        android:text="@string/actualizar_contrase_a"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnActualizarUsuario" />
+
+    <Button
+        android:id="@+id/btnEliminarCuenta"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/azul"
+        android:text="@string/eliminar_cuenta"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnActualizarPassword" />
+
+    <Button
+        android:id="@+id/btnVolverLogin"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/azul"
+        android:text="@string/volver_al_login"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnEliminarCuenta" />
+</androidx.constraintlayout.widget.ConstraintLayout>
