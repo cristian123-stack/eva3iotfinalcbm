@@ -78,6 +78,11 @@ class BottomNav : AppCompatActivity() {
                 else -> false
             }
         }
+        binding.btnatras.setOnClickListener {
+            val intent = Intent(this, dashboard::class.java)
+            startActivity(intent)
+            finish()
+        }
 
     }
 }
