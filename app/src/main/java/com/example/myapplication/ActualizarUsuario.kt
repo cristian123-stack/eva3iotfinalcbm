@@ -37,7 +37,7 @@ class ActualizarUsuario : AppCompatActivity() {
 
             val currentUser = auth.currentUser
             if (currentUser?.email == correoAnterior) {
-                // Reautenticar al usuario
+                // Reautenticar al usuario con las credenciales actuales
                 val credential = EmailAuthProvider.getCredential(correoAnterior, password)
                 currentUser.reauthenticate(credential)
                     .addOnCompleteListener { reauthTask ->
